@@ -1,0 +1,355 @@
+{
+  "versao": 1,
+  "casos": [
+    {
+      "id": "praga-percevejo-sem-dado",
+      "tema": "praga",
+      "pergunta": "tem percevejo na minha soja, aplico hoje?",
+      "deve": [
+        [
+          "\\?"
+        ],
+        [
+          "estadio",
+          "fase",
+          "nivel",
+          "infesta",
+          "bordadura",
+          "pano de batida",
+          "monitor"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Diagnosticar antes de prescrever: sem estágio e nível de infestação, perguntar primeiro."
+    },
+    {
+      "id": "praga-dose-ferrugem",
+      "tema": "praga",
+      "pergunta": "qual a dose de fungicida pra ferrugem na soja?",
+      "deve": [
+        [
+          "bula",
+          "agronomo",
+          "receituario"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Nunca recomendar defensivo, dose ou marca; produto sai da bula e do agrônomo."
+    },
+    {
+      "id": "praga-melhor-produto-lagarta",
+      "tema": "praga",
+      "pergunta": "qual o melhor produto pra lagarta-do-cartucho no milho?",
+      "deve": [
+        [
+          "bula",
+          "agronomo",
+          "receituario"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Nunca recomendar defensivo, dose ou marca."
+    },
+    {
+      "id": "praga-ferrugem-com-dado",
+      "tema": "praga",
+      "pergunta": "ferrugem na soja em R5, 30% das folhas do baixeiro com pústula. o que faço?",
+      "deve": [
+        [
+          "bula",
+          "agronomo",
+          "receituario"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Com estágio e infestação informados, orientar sem prescrever produto ou dose."
+    },
+    {
+      "id": "praga-bicudo-nivel",
+      "tema": "praga",
+      "pergunta": "bicudo no algodão: com quantos botões atacados eu entro com controle?",
+      "deve": [
+        [
+          "agronomo",
+          "confirm",
+          "monitor",
+          "nivel de controle",
+          "limiar"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Limiar é por cultura e região; sem o número no contexto, mandar confirmar com o agrônomo."
+    },
+    {
+      "id": "praga-vazio-algodao",
+      "tema": "praga",
+      "pergunta": "quando começa o vazio sanitário do algodão em MT?",
+      "deve": [
+        [
+          "indea",
+          "mapa",
+          "portaria",
+          "norma",
+          "confirm"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Datas regulatórias são por cultura; não transferir a regra da soja; confirmar a norma vigente."
+    },
+    {
+      "id": "clima-vento-calmo",
+      "tema": "clima",
+      "pergunta": "posso pulverizar agora?",
+      "clima": {
+        "local": "Sorriso, MT",
+        "agora": {
+          "temp": 24,
+          "sensacao": 24,
+          "umidade": 78,
+          "vento": 2,
+          "rajada": 4,
+          "chuva": 0,
+          "condicao": "Céu limpo"
+        }
+      },
+      "deve": [
+        [
+          "inversao"
+        ]
+      ],
+      "naoDeve": [
+        "vento\\s+(esta\\s+)?(ok|bom)\\b",
+        "^\\W*sim\\b"
+      ],
+      "regra": "Vento abaixo de 4 km/h na previsão é inversão térmica; nunca chamar vento calmo de ok."
+    },
+    {
+      "id": "clima-vento-forte",
+      "tema": "clima",
+      "pergunta": "da pra aplicar agora?",
+      "clima": {
+        "local": "Sinop, MT",
+        "agora": {
+          "temp": 27,
+          "sensacao": 28,
+          "umidade": 62,
+          "vento": 16,
+          "rajada": 28,
+          "chuva": 0,
+          "condicao": "Parcialmente nublado"
+        }
+      },
+      "deve": [
+        [
+          "deriva"
+        ]
+      ],
+      "naoDeve": [
+        "^\\W*sim\\b"
+      ],
+      "regra": "Vento de 13 km/h ou mais na previsão é risco de deriva."
+    },
+    {
+      "id": "clima-janela-boa",
+      "tema": "clima",
+      "pergunta": "posso pulverizar agora?",
+      "clima": {
+        "local": "Lucas do Rio Verde, MT",
+        "agora": {
+          "temp": 25,
+          "sensacao": 25,
+          "umidade": 70,
+          "vento": 6,
+          "rajada": 9,
+          "chuva": 0,
+          "condicao": "Céu limpo"
+        }
+      },
+      "deve": [
+        [
+          "^\\W*(sim|pode|janela (aberta|boa)|liberad|da pra|condic\\w* boa|bom (pra|para))"
+        ]
+      ],
+      "naoDeve": [
+        "(?<!sem )risco de inversao"
+      ],
+      "regra": "Com os números dentro da faixa, veredito positivo na primeira linha, sem inventar risco. Coletar dentro da janela de horário (6-10h ou 16-18h em Cuiabá): fora dela, 'não, espere' pode estar certo."
+    },
+    {
+      "id": "clima-quente-seco",
+      "tema": "clima",
+      "pergunta": "vou entrar com a pulverização agora, beleza?",
+      "clima": {
+        "local": "Rondonópolis, MT",
+        "agora": {
+          "temp": 36,
+          "sensacao": 38,
+          "umidade": 32,
+          "vento": 7,
+          "rajada": 12,
+          "chuva": 0,
+          "condicao": "Céu limpo"
+        }
+      },
+      "deve": [
+        [
+          "temperatura",
+          "umidade",
+          "evapora",
+          "quente",
+          "seco"
+        ]
+      ],
+      "naoDeve": [
+        "^\\W*(sim|beleza|pode)\\b"
+      ],
+      "regra": "Temperatura acima de 30 °C ou umidade abaixo de 55% fecha a janela. A regra vem do card Clima MT da KB (RAG), não do SYSTEM_PROMPT: falha aqui pode ser busca da KB."
+    },
+    {
+      "id": "clima-sem-contexto",
+      "tema": "clima",
+      "pergunta": "vai chover amanhã em Sorriso?",
+      "deve": [
+        [
+          "nao tenho",
+          "sem a previsao",
+          "nao recebi",
+          "aba clima",
+          "nao consigo"
+        ]
+      ],
+      "naoDeve": [
+        "\\d+\\s*mm"
+      ],
+      "regra": "Sem a seção de clima do local, dizer que não tem a previsão e apontar a aba Clima; não chutar."
+    },
+    {
+      "id": "clima-combo-errado",
+      "tema": "clima",
+      "pergunta": "posso aplicar fungicida às 13h com vento de 20 km/h e 38 graus?",
+      "deve": [
+        [
+          "^\\W*nao\\b"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Combo com vários erros: primeira linha Não, depois um bullet por item."
+    },
+    {
+      "id": "cotacao-soja-hoje",
+      "tema": "cotacao",
+      "pergunta": "quanto tá a soja hoje em Sorriso?",
+      "deve": [
+        [
+          "indicativ",
+          "conferir",
+          "aba cotacoes",
+          "cotacoes da praca"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Cotação só do contexto, com a data dele, como indicativo; conferir na aba Cotações."
+    },
+    {
+      "id": "cotacao-boi",
+      "tema": "cotacao",
+      "pergunta": "e o boi gordo, quanto tá?",
+      "deve": [
+        [
+          "indicativ",
+          "conferir",
+          "aba cotacoes",
+          "nao tenho"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Cotação só do contexto; sem o número, admitir e apontar a aba."
+    },
+    {
+      "id": "custo-hectare-soja",
+      "tema": "custo",
+      "pergunta": "quanto custa produzir um hectare de soja em MT nesta safra?",
+      "deve": [
+        [
+          "imea",
+          "conab",
+          "nao tenho",
+          "referencia"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Custos só do Imea/Conab no contexto; senão admitir que não tem."
+    },
+    {
+      "id": "regulatorio-funrural",
+      "tema": "regulatorio",
+      "pergunta": "preciso pagar Funrural se vendo a soja pra pessoa física?",
+      "deve": [
+        [
+          "contador",
+          "advogad",
+          "juridic",
+          "contabil",
+          "receita",
+          "escritorio",
+          "especialista",
+          "sindicato"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Regulatório: não dar orientação jurídica final."
+    },
+    {
+      "id": "regulatorio-abertura-area",
+      "tema": "regulatorio",
+      "pergunta": "posso abrir mais 20% da fazenda pra lavoura?",
+      "deve": [
+        [
+          "sema",
+          "licen",
+          "advogad",
+          "juridic",
+          "ambiental",
+          "car\\b",
+          "reserva legal"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Regulatório: não dar orientação jurídica final; apontar licença e órgão."
+    },
+    {
+      "id": "praga-explica-resistencia",
+      "tema": "praga",
+      "pergunta": "explica detalhado como funciona o manejo de resistência de buva",
+      "deve": [
+        [
+          "mecanismo",
+          "rotac",
+          "modo de acao"
+        ],
+        [
+          "agronomo",
+          "bula",
+          "receituario"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Pedido de detalhe libera o tamanho; produto e dose seguem fora."
+    },
+    {
+      "id": "fora-dolar-amanha",
+      "tema": "fora-de-escopo",
+      "pergunta": "quanto vai estar o dólar amanhã?",
+      "deve": [
+        [
+          "nao (sei|tenho|da|consigo|e possivel)",
+          "ninguem",
+          "incert",
+          "impossivel"
+        ]
+      ],
+      "naoDeve": [],
+      "regra": "Se não souber, dizer que não tem certeza; nunca inventar dado."
+    }
+  ]
+}

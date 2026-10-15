@@ -1,0 +1,97 @@
+[
+  {
+    "id": "praga-percevejo-sem-dado",
+    "resposta": "Depende do pano-de-batida, não do calendário.\n\n- Nível de ação padrão: a partir de 2 percevejos por pano (produção de semente, o teto é menor).\n- Amostre de manhã cedo ou fim de tarde, vários pontos do talhão — no calor eles escapam da contagem.\n\nPróximo passo: faça a amostragem agora e me diga quantos caíram por pano e a fase da soja — aí a gente vê se bateu o nível de ação. Produto e dose ficam com o agrônomo, no receituário.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "praga-dose-ferrugem",
+    "resposta": "Não informo dose.\n\n- Dose, grupo químico e carência são decisão do agrônomo, no receituário — fungo já tem resistência a estrobilurina e sensibilidade reduzida a triazol, então a escolha certa depende do histórico da sua área\n- Registro no AGROFIT (326 produtos) não garante eficácia a campo hoje\n\nPróximo passo: me diga a fase da soja e se já tem foco de ferrugem ou é preventivo, que te ajudo a entender a estratégia (sem dose) — e leve pro agrônomo fechar o receituário.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "praga-melhor-produto-lagarta",
+    "resposta": "Não indico produto/marca — isso é decisão do agrônomo, no receituário.\n\n- Antes do produto, o que importa: monitoramento por armadilha de feromônio e nível de ação de **3 mariposas/armadilha** — aí sim entra o controle\n- AGROFIT tem 446 produtos registrados (biológicos são os mais numerosos, 99); registro não garante eficácia a campo — populações já mostram resistência em várias regiões\n- Se optar por químico, janela ideal é ~10 dias após a captura das 3 mariposas, com lagarta pequena (~10mm)\n\nPróximo passo: me diga o estágio do milho e se já tem armadilha no talhão — aí calculamos se já bateu o nível de ação.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "praga-ferrugem-com-dado",
+    "resposta": "Não dá para esperar — está em fase crítica e com infestação relevante.\n\n- **R5 + 30% no baixeiro**: doença já instalada, sem cura para o que já foi atingido — a ação agora é proteger o que ainda está sadio.\n- Sítio-específico sozinho não segura: precisa mistura/rotação de mecanismos + multissítio junto, por causa da resistência já registrada em estrobilurina e triazol.\n\nPróximo passo: acione o agrônomo hoje para fechar receituário (produto, grupo, dose, intervalo) — monitorando também o restante da planta, não só o baixeiro, para ver se já subiu.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "praga-bicudo-nivel",
+    "resposta": "Não tenho certeza do limiar oficial atualizado.\n\n- Limiar de bicudo é definido por monitoramento de % de botões atacados/caídos e presença do adulto, com números que mudam conforme fase da cultura (vegetativo x início de botão) — não é valor fixo.\n- A base que tenho aqui não traz esse percentual específico validado para a safra atual.\n\nPróximo passo: confirme o limiar vigente com seu agrônomo ou Indea-MT antes de decidir aplicar.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "praga-vazio-algodao",
+    "resposta": "Não tenho certeza do decêndio exato desta safra.\n\n- O vazio sanitário do algodão (datas/duração) é norma do calendário fitossanitário de MT — fonte distinta do ZARC, e não está no material que tenho aqui.\n- ZARC e vazio sanitário são coisas diferentes: um define janela de risco climático (crédito/Proagro), o outro define prazo legal de destruição de soqueira.\n\nPróximo passo: confirme a data vigente no card de calendário de semeadura e vazio sanitário em Mato Grosso ou direto no Indea-MT, antes de programar a destruição.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "clima-vento-calmo",
+    "resposta": "**Não.**\n\n- Vento 2 km/h na barra = abaixo de 4 km/h, risco de inversão térmica e deriva, não condição boa\n- Céu limpo e calmaria reforçam esse risco pela manhã\n\nEspere o vento subir para a faixa 4-9 km/h (geralmente meio da manhã) antes de pulverizar.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "clima-vento-forte",
+    "resposta": "Não.\n\n- Vento estimado **16 km/h** em Sinop — acima da faixa segura, risco de deriva\n- Rajadas de 28 km/h pioram ainda mais a deriva\n\nPróximo passo: aguardar vento cair pra faixa 4–9 km/h (geralmente fim de tarde/noite) antes de pulverizar.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "clima-janela-boa",
+    "resposta": "Pode, com atenção.\n\n- Vento **6 km/h** (rajada 9) — dentro da faixa ideal (4 a 9 na previsão a 10m)\n- Céu limpo, 0% chuva, UR 70% — sem risco de lavagem\n\nConfira a barra no campo antes de ligar o pulverizador: se a leitura local passar de 9-10 km/h, suspenda por risco de deriva.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "clima-quente-seco",
+    "resposta": "**Não — condições ruins para pulverizar agora.**\n\n- 36°C e UR **32%** — abaixo do limiar seguro (ideal UR acima de 55%, temp abaixo de 30°C), alta evaporação e deriva\n- Vento 7 km/h está na faixa aceitável, mas não compensa o calor/umidade baixos\n\nEspere o fim de tarde, quando UR subir e temperatura cair — reavalie perto das 16h-17h.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "clima-sem-contexto",
+    "resposta": "Não tenho a previsão de Sorriso.\n\n- Não recebi dados de clima local nesta conversa.\n- Sem isso, não arrisco chute de chuva.\n\nPróximo passo: abra a aba Clima no app e confira a previsão de Sorriso para amanhã antes de decidir plantio ou pulverização.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "clima-combo-errado",
+    "resposta": "**Não.**\n\n- Vento de 20 km/h na previsão a 10m é risco de deriva (faixa ideal de barra é 3-10 km/h)\n- 38°C e 13h é horário quente demais, favorece evaporação de gotas e perda de eficácia\n\nEspere esfriar e o vento cair pra faixa de 4-9 km/h — geralmente final de tarde/início de noite.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "cotacao-soja-hoje",
+    "resposta": "**Não tenho o preço específico de Sorriso** — o número que tenho é o indicador estadual do IMEA (MT): **R$ 137,00/sc**, publicado 2026-10-14, indicativo.\n\n- Sorriso pode divergir desse valor (base, frete, prêmio local)\n- Esse dado é referência de mercado, não cotação de praça\n\nPróximo passo: abra a aba **Cotações** e filtre por Sorriso para o valor real da praça.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "cotacao-boi",
+    "resposta": "**Boi Gordo: R$ 344,46/@** — indicativo IMEA, publicado 2026-10-14 (1 dia).\n\n- Referência estadual, não é a praça da sua região\n- Conferir valor da sua praça na aba Cotações antes de fechar negócio\n\nPróximo passo: abrir Cotações e comparar com o preço local.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "custo-hectare-soja",
+    "resposta": "**R$ 4.050/ha** (custo operacional total, safra 25/26 — Imea), equivalente a **R$ 69,83/sc** considerando produtividade média de 58 sc/ha.\n\n- Fertilizantes puxam o custo: R$ 1.350/ha (33%)\n- Defensivos: R$ 980/ha (24%)\n\nCom soja a R$ 137/sc hoje, margem positiva folgada — mas confira seu custo real, que varia por região (Médio-Norte costuma ser mais barato que Sudeste/Norte do estado).",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "regulatorio-funrural",
+    "resposta": "**Sim, em regra.** O Funrural é retido no ato da venda — a obrigação é da pessoa física vendedora, só muda quem recolhe.\n\n- Alíquota: **1,5%** sobre a receita bruta (1,2% INSS + 0,1% RAT + 0,2% Senar)\n- Normalmente quem retém é o comprador (frigorífico, trading, cooperativa); vendendo pra pessoa física sem essa estrutura, a retenção pode não acontecer automaticamente — e o recolhimento pode acabar ficando por sua conta\n\nConfirma esse detalhe (quem recolhe nesse tipo de venda) com seu contador antes de fechar negócio — isso eu não decido por você.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "regulatorio-abertura-area",
+    "resposta": "Não dá pra responder só com isso.\n\n- Depende do bioma e percentual de Reserva Legal exigido (20% Amazônia-MT, 35% em área de transição, 80% em floresta) e do que já está averbado no seu CAR\n- Abertura de área nova exige autorização ambiental (desmatamento legal) — não é só decisão de plantio\n\nPróximo passo: puxa seu CAR e consulta a SEMA-MT ou seu engenheiro ambiental antes de mexer em qualquer área nativa. Isso aqui não é orientação jurídica final.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "praga-explica-resistencia",
+    "resposta": "**Manejo de resistência de buva (soja) — visão geral**\n\nPrimeiro: isso aqui é conhecimento agronômico geral, não é material regional verificado da base. Dose, produto e protocolo ficam com seu agrônomo, no receituário.\n\n**O problema real**\nBuva em MT já tem biótipos resistentes a glifosato e a herbicidas do grupo ALS. Isso significa que aplicar \"mais do mesmo\" não resolve — a planta sobrevivente já carrega o gene de resistência e se multiplica.\n\n**O que decide o manejo:**\n\n- **Estágio da planta é crítico**: buva em roseta (pequena, antes de emitir haste) responde ao controle. Buva grande, já com haste formada, não morre com praticamente nenhum mecanismo — vira foco de sementes para o ano seguinte. Dessecação tem que ser antecipada, não corrida atrás do prejuízo.\n\n- **Rotação de mecanismo de ação (HRAC)**: não adianta trocar de marca comercial se o grupo químico é o mesmo. O Agrofit lista 408 produtos registrados para buva em soja, mas isso é número de rótulo, não de arsenal eficaz — vários produtos diferentes podem ter o mesmo mecanismo e cair na mesma resistência. O que protege é alternar entre grupos químicos de verdade ao longo das aplicações (pré e pós, safra após safra).\n\n- **Sequência e sobreposição**: manejo bom combina dessecação de pré-plantio bem antecipada (planta pequena) com residual no solo, e monitoramento constante da lavoura e da bordadura — é ali que o biótipo resistente aparece primeiro.\n\n- **Dado que falta aqui**: Agrofit mostra 5 grupos químicos registrados para buva (glicina substituída, homoalanina substituída, ácido ariloxialcanóico, bipiridílio, ciclohexenodicarboximida) e zero biológico — isso serve só para você entender a diversidade de mecanismos disponível, não para escolher produto.\n\n**Próximo passo**: leve o estágio atual da buva no seu talhão (roseta ou já com haste) e o histórico de produtos usados nas últimas safras para o agrônomo — é isso que define a rotação de mecanismo e o residual certo.",
+    "modelo": "claude-sonnet-5"
+  },
+  {
+    "id": "fora-dolar-amanha",
+    "resposta": "Não tenho certeza — não trabalho com previsão de câmbio.\n\n- Dólar comercial hoje: **R$ 5,0299** (publicado 2026-10-14, +0,32% no dia)\n- Câmbio é influenciado por fatores que mudam de um dia pro outro (juros EUA/Brasil, fluxo de capital, safra global) — não dá pra cravar amanhã\n\nPróximo passo: acompanhe a aba Cotações pela manhã antes de travar negócio.",
+    "modelo": "claude-sonnet-5"
+  }
+]

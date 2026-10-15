@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "test": "deno test",
+    "avaliar": "deno run --allow-read cli/avaliar.ts data/perguntas.json",
+    "exemplo": "deno run --allow-read cli/avaliar.ts data/perguntas.json examples/respostas-2026-10-15.json"
+  }
+}

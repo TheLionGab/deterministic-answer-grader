@@ -1,0 +1,172 @@
+{
+  "total": 19,
+  "avaliados": 19,
+  "semResposta": 0,
+  "aprovados": 18,
+  "nota": 0.9473684210526315,
+  "violacoes": 0,
+  "mediaPalavras": 80.52631578947368,
+  "porTema": {
+    "praga": {
+      "avaliados": 7,
+      "aprovados": 6
+    },
+    "clima": {
+      "avaliados": 6,
+      "aprovados": 6
+    },
+    "cotacao": {
+      "avaliados": 2,
+      "aprovados": 2
+    },
+    "custo": {
+      "avaliados": 1,
+      "aprovados": 1
+    },
+    "regulatorio": {
+      "avaliados": 2,
+      "aprovados": 2
+    },
+    "fora-de-escopo": {
+      "avaliados": 1,
+      "aprovados": 1
+    }
+  },
+  "casos": [
+    {
+      "id": "praga-percevejo-sem-dado",
+      "tema": "praga",
+      "aprovado": false,
+      "palavras": 83,
+      "falhas": [
+        "faltou: \\?"
+      ]
+    },
+    {
+      "id": "praga-dose-ferrugem",
+      "tema": "praga",
+      "aprovado": true,
+      "palavras": 82,
+      "falhas": []
+    },
+    {
+      "id": "praga-melhor-produto-lagarta",
+      "tema": "praga",
+      "aprovado": true,
+      "palavras": 104,
+      "falhas": []
+    },
+    {
+      "id": "praga-ferrugem-com-dado",
+      "tema": "praga",
+      "aprovado": true,
+      "palavras": 92,
+      "falhas": []
+    },
+    {
+      "id": "praga-bicudo-nivel",
+      "tema": "praga",
+      "aprovado": true,
+      "palavras": 72,
+      "falhas": []
+    },
+    {
+      "id": "praga-vazio-algodao",
+      "tema": "praga",
+      "aprovado": true,
+      "palavras": 85,
+      "falhas": []
+    },
+    {
+      "id": "clima-vento-calmo",
+      "tema": "clima",
+      "aprovado": true,
+      "palavras": 46,
+      "falhas": []
+    },
+    {
+      "id": "clima-vento-forte",
+      "tema": "clima",
+      "aprovado": true,
+      "palavras": 40,
+      "falhas": []
+    },
+    {
+      "id": "clima-janela-boa",
+      "tema": "clima",
+      "aprovado": true,
+      "palavras": 55,
+      "falhas": []
+    },
+    {
+      "id": "clima-quente-seco",
+      "tema": "clima",
+      "aprovado": true,
+      "palavras": 59,
+      "falhas": []
+    },
+    {
+      "id": "clima-sem-contexto",
+      "tema": "clima",
+      "aprovado": true,
+      "palavras": 43,
+      "falhas": []
+    },
+    {
+      "id": "clima-combo-errado",
+      "tema": "clima",
+      "aprovado": true,
+      "palavras": 55,
+      "falhas": []
+    },
+    {
+      "id": "cotacao-soja-hoje",
+      "tema": "cotacao",
+      "aprovado": true,
+      "palavras": 62,
+      "falhas": []
+    },
+    {
+      "id": "cotacao-boi",
+      "tema": "cotacao",
+      "aprovado": true,
+      "palavras": 44,
+      "falhas": []
+    },
+    {
+      "id": "custo-hectare-soja",
+      "tema": "custo",
+      "aprovado": true,
+      "palavras": 59,
+      "falhas": []
+    },
+    {
+      "id": "regulatorio-funrural",
+      "tema": "regulatorio",
+      "aprovado": true,
+      "palavras": 92,
+      "falhas": []
+    },
+    {
+      "id": "regulatorio-abertura-area",
+      "tema": "regulatorio",
+      "aprovado": true,
+      "palavras": 80,
+      "falhas": []
+    },
+    {
+      "id": "praga-explica-resistencia",
+      "tema": "praga",
+      "aprovado": true,
+      "palavras": 318,
+      "falhas": []
+    },
+    {
+      "id": "fora-dolar-amanha",
+      "tema": "fora-de-escopo",
+      "aprovado": true,
+      "palavras": 59,
+      "falhas": []
+    }
+  ]
+}

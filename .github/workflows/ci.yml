@@ -1,0 +1,19 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - run: deno check src/avaliacao.ts cli/avaliar.ts
+      - run: deno test
+      - name: reproduz a nota de 15/10/2026
+        run: |
+          deno run --allow-read cli/avaliar.ts data/perguntas.json examples/respostas-2026-10-15.json > /tmp/out.json
+          deno eval 'const m = JSON.parse(await Deno.readTextFile("/tmp/out.json")); if (m.aprovados !== 18 || m.avaliados !== 19 || m.violacoes !== 0) { console.error(m.aprovados, m.avaliados, m.violacoes); Deno.exit(1); }'
